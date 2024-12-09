@@ -238,6 +238,7 @@
             Controls.Add(textBoxTask);
             Name = "FormMain";
             Text = "Form1";
+            Load += FormMain_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewFunction).EndInit();
             ((System.ComponentModel.ISupportInitialize)chartFunction).EndInit();
             ResumeLayout(false);

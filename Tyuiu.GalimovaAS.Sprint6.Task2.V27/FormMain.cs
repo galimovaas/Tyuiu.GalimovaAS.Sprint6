@@ -64,5 +64,10 @@ namespace Tyuiu.GalimovaAS.Sprint6.Task2.V27
         {
             MessageBox.Show("Таск 1 выполнил студент группы АСОиУБ-24-1 Галимова Алина Салаватовна", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
