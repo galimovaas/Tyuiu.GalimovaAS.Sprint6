@@ -52,5 +52,10 @@ namespace Tyuiu.GalimovaAS.Sprint6.Task1.V22
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

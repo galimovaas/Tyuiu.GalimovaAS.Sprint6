@@ -187,6 +187,7 @@
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 1 | Вариант 22 | Галимова А.С.";
+            Load += FormMain_Load;
             ResumeLayout(false);
             PerformLayout();
         }
