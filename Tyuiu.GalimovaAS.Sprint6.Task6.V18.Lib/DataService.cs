@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text;
 using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.GalimovaAS.Sprint6.Task6.V18.Lib
 {
@@ -6,7 +7,7 @@ namespace Tyuiu.GalimovaAS.Sprint6.Task6.V18.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            string resStr = "";
+            StringBuilder resStr = new StringBuilder(); 
 
             using (StreamReader reader = new StreamReader(path))
             {
@@ -14,17 +15,17 @@ namespace Tyuiu.GalimovaAS.Sprint6.Task6.V18.Lib
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] res = line.Split(' ');
-                    for (int i = 0; i < res.Length; i++)
+                    foreach (var word in res) 
                     {
-                        if (res[i].Contains("n"))
+                        if (word.Contains("n", StringComparison.OrdinalIgnoreCase)) 
                         {
-                            resStr += res[i] + "";
+                            resStr.Append(word + " "); 
                         }
-
                     }
                 }
             }
-            return resStr;
+
+            return resStr.ToString().Trim();
         }
     }
 }
