@@ -7,7 +7,7 @@ namespace Tyuiu.GalimovaAS.Sprint6.Task6.V18.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            StringBuilder resStr = new StringBuilder(); 
+            string resStr = "";
 
             using (StreamReader reader = new StreamReader(path))
             {
@@ -15,16 +15,16 @@ namespace Tyuiu.GalimovaAS.Sprint6.Task6.V18.Lib
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] res = line.Split(' ');
-                    foreach (var word in res) 
+                    for (int i = 0; i < res.Length; i++)
                     {
-                        if (word.Contains("n", StringComparison.OrdinalIgnoreCase)) 
+                        if (res[i].Contains("n"))
                         {
-                            resStr.Append(word + " "); 
+                            resStr += res[i] + " ";
                         }
+
                     }
                 }
             }
-
             return resStr.ToString().Trim();
         }
     }
