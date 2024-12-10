@@ -18,7 +18,7 @@ namespace Tyuiu.GalimovaAS.Sprint6.Task6.V18.Lib
                     {
                         if (res[i].Contains("n"))
                         {
-                            resStr += res[i] + " ";
+                            resStr += res[i] + "";
                         }
 
                     }
