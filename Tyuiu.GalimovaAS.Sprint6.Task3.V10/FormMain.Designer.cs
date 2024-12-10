@@ -32,7 +32,6 @@
             textBoxTask = new TextBox();
             buttonDoneClick = new Button();
             buttonHelpClick = new Button();
-            textBoxResult = new TextBox();
             label1 = new Label();
             dataGridViewMatrix = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
@@ -64,7 +63,7 @@
             // buttonDoneClick
             // 
             buttonDoneClick.FlatStyle = FlatStyle.Flat;
-            buttonDoneClick.Location = new Point(676, 171);
+            buttonDoneClick.Location = new Point(767, 171);
             buttonDoneClick.Name = "buttonDoneClick";
             buttonDoneClick.Size = new Size(112, 29);
             buttonDoneClick.TabIndex = 14;
@@ -75,7 +74,7 @@
             // buttonHelpClick
             // 
             buttonHelpClick.FlatStyle = FlatStyle.Flat;
-            buttonHelpClick.Location = new Point(635, 171);
+            buttonHelpClick.Location = new Point(717, 171);
             buttonHelpClick.Name = "buttonHelpClick";
             buttonHelpClick.Size = new Size(35, 29);
             buttonHelpClick.TabIndex = 13;
@@ -83,18 +82,10 @@
             buttonHelpClick.UseVisualStyleBackColor = true;
             buttonHelpClick.Click += buttonHelpClick_Click;
             // 
-            // textBoxResult
-            // 
-            textBoxResult.Location = new Point(635, 38);
-            textBoxResult.Multiline = true;
-            textBoxResult.Name = "textBoxResult";
-            textBoxResult.Size = new Size(125, 34);
-            textBoxResult.TabIndex = 15;
-            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(642, 12);
+            label1.Location = new Point(717, 1);
             label1.Name = "label1";
             label1.Size = new Size(110, 20);
             label1.TabIndex = 16;
@@ -108,7 +99,7 @@
             dataGridViewMatrix.Name = "dataGridViewMatrix";
             dataGridViewMatrix.RowHeadersVisible = false;
             dataGridViewMatrix.RowHeadersWidth = 51;
-            dataGridViewMatrix.Size = new Size(300, 188);
+            dataGridViewMatrix.Size = new Size(382, 188);
             dataGridViewMatrix.TabIndex = 17;
             // 
             // Column1
@@ -136,10 +127,9 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 206);
+            ClientSize = new Size(891, 206);
             Controls.Add(dataGridViewMatrix);
             Controls.Add(label1);
-            Controls.Add(textBoxResult);
             Controls.Add(buttonDoneClick);
             Controls.Add(buttonHelpClick);
             Controls.Add(labelTerm);
@@ -158,7 +148,6 @@
         private TextBox textBoxTask;
         private Button buttonDoneClick;
         private Button buttonHelpClick;
-        private TextBox textBoxResult;
         private Label label1;
         private DataGridView dataGridViewMatrix;
         private DataGridViewTextBoxColumn Column1;
